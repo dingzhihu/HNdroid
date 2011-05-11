@@ -4,7 +4,7 @@
 	android:layout_height="fill_parent"
 	android:padding="6dip">
 
-	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	<TextView
 		android:id="@+id/comments"
 		android:layout_width="51dip"
 		android:layout_height="48dip"
@@ -17,35 +17,32 @@
 		android:clickable="true"
 	/>
 	
-	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-		android:id="@+id/author"
-		android:layout_width="wrap_content"
-		android:layout_height="fill_parent"
-		android:layout_below="@+id/title"
-		android:layout_alignLeft="@id/title"
-		android:layout_alignParentBottom="true"
-		android:layout_toLeftOf="@+id/score"
-		android:layout_toRightOf="@+id/comments"
-		android:gravity="bottom"
-		android:textColor="#424142"
-	/>
-	
-	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-		android:id="@id/title"
+	<TextView
+		android:id="@+id/title"
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent"
 		android:textAppearance="?android:attr/textAppearanceMedium"
 		android:gravity="top"
 		android:textColor="#424142"
 		android:autoLink="web"
-		android:minHeight="43dip"
+		android:minHeight="48dip"
 		android:textStyle="bold"
 		android:layout_toRightOf="@+id/comments"
-		android:layout_alignParentTop="true"
-		
 	/>
 	
-	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+	<TextView
+		android:id="@+id/author"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/title"
+		android:layout_alignParentBottom="true"
+		android:layout_toRightOf="@id/comments"
+		android:gravity="bottom"
+		android:textColor="#424142"
+	/>
+	
+	<TextView
 		android:id="@id/score"
 		android:layout_width="wrap_content"
 		android:layout_height="fill_parent"
@@ -53,5 +50,5 @@
 		android:layout_alignBaseline="@id/author"
 		android:textColor="#8C8E8C"
 	/>
-
+	
 </RelativeLayout>

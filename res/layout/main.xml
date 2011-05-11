@@ -7,10 +7,9 @@
     
     <LinearLayout
     	android:id="@+id/hnTop"
-    	android:layout_height="60dip"
+    	android:layout_height="wrap_content"
     	android:layout_width="fill_parent"
     	android:background="#FF6600"
-    	android:layout_above="@+id/hnListView"
     	android:orientation="vertical">
     	
     	<TextView
@@ -29,6 +28,8 @@
     		android:layout_width="fill_parent"
     		android:layout_height="wrap_content"
     		android:paddingLeft="10dip"
+    		android:paddingTop="5dip"
+    		android:paddingBottom="5dip"
     		android:text="News"
     		android:singleLine="true"
         	android:ellipsize="end"
@@ -38,6 +39,7 @@
     
 	<ListView
 		android:id="@+id/hnListView"
+		android:layout_weight="1"
 		android:layout_width="fill_parent" 
     	android:layout_height="fill_parent"
     />
